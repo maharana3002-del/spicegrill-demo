@@ -45,6 +45,19 @@ The website uses sample/demo content and is intended for **portfolio presentatio
 - Dashboard overview
 
 ---
+## 📸 Screenshots
+
+### Homepage
+![Homepage](screenshots/home-page.png)
+
+### Dining Concepts
+![Dining Concepts](screenshots/dining-concepts.png)
+
+### Demo Reviews
+![Demo Reviews](screenshots/demo-reviews.png)
+
+### Demo Reservation
+![Demo Reservation](screenshots/demo-reservation.png)
 
 ## 🛠️ Technology Stack
 
