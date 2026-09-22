@@ -5,9 +5,9 @@
 
 ## 🍽️ About the Project
 
-Spice Grill is a modern restaurant website concept designed to demonstrate how a restaurant could present its menu, ordering experience, reservations, and administrative tools through a responsive web application.
+Spice Grill is a modern restaurant website concept designed to demonstrate a premium digital dining experience.
 
-The project includes both a **customer-facing restaurant storefront** and an **admin dashboard**, connected through a Node.js REST API.
+The project includes a customer-facing restaurant storefront, interactive menu browsing, a simulated cart, reservation interface, and an administrative dashboard connected through a REST API.
 
 The website uses sample/demo content and is intended for **portfolio presentation and UI/UX demonstration**.
 
@@ -24,40 +24,47 @@ The website uses sample/demo content and is intended for **portfolio presentatio
 - Increase/decrease item quantities
 - Automatic subtotal calculation
 - Delivery calculation
-- Simulated checkout/order flow
-- Reservation/booking interface
-- Mobile-friendly navigation drawer
-- Custom modals and interactive UI elements
+- Simulated ordering flow
+- Demo reservation interface
+- Mobile navigation drawer
+- Custom modals and interactive UI components
 - Responsive design for desktop, tablet, and mobile
-- Smooth animations and modern visual styling
+- Modern dark-luxury visual design
+- Glassmorphism and gradient effects
 
 ### Admin Dashboard
 
 - Admin authentication
 - Protected admin routes
 - Menu management
-- Add, update, and delete menu items
 - Category management
 - Order management
 - Reservation management
-- Restaurant statistics
-- Basic analytics
-- Dashboard overview
+- Dashboard statistics
+- Analytics endpoints
+- Protected administrative API functionality
 
 ---
+
 ## 📸 Screenshots
 
 ### Homepage
-![Homepage](screenshots/home-page.png)
+
+![Homepage](home-page.png)
 
 ### Dining Concepts
-![Dining Concepts](screenshots/dining-concepts.png)
+
+![Dining Concepts](Dining-Concepts.png)
 
 ### Demo Reviews
-![Demo Reviews](screenshots/demo-reviews.png)
+
+![Demo Reviews](Demo-Reviews.png)
 
 ### Demo Reservation
-![Demo Reservation](screenshots/demo-reservation.png)
+
+![Demo Reservation](Demo-Reservation.png)
+
+---
 
 ## 🛠️ Technology Stack
 
@@ -68,67 +75,67 @@ The website uses sample/demo content and is intended for **portfolio presentatio
 - Vanilla JavaScript (ES6+)
 - Fetch API
 - REST API integration
-- Asynchronous JavaScript
 - Lucide Icons
 - Google Fonts
+  - Plus Jakarta Sans
+  - Playfair Display
+  - Inter
 
 ### Backend
 
 - Node.js
 - Express.js v5
 - REST API
-- MVC-style structure
-- Express middleware
 - CORS
 - dotenv
 - JWT authentication
 - bcryptjs
+- MVC-style project structure
 
 ### Database
 
 - SQLite
 - better-sqlite3
-- Foreign key relationships
-- Transactions
-- WAL mode
-- Automatic database schema/seed setup
+- Foreign-key constraints
+- Database transactions
+- WAL (Write-Ahead Logging)
+- Automatic schema initialization
+- Demo-data seeding
 
 ---
 
 ## 🏗️ Architecture
-
-The project follows a simple full-stack architecture:
 
 ```text
 Customer Storefront
         │
         │ HTTP / JSON
         ▼
-   REST API
+     REST API
         │
         ▼
 Node.js + Express.js
         │
-        ├── Authentication
-        ├── Controllers
         ├── Routes
-        ├── Business Logic
-        └── Middleware
+        ├── Controllers
+        ├── Middleware
+        ├── Authentication
+        └── Business Logic
         │
         ▼
- better-sqlite3
+   better-sqlite3
         │
         ▼
-    SQLite Database
+   SQLite Database
 ```
 
 The project also includes a separate admin portal for managing demo restaurant data.
 
 ---
 
-## 🔌 API Structure
+## 🔌 API
 
-The backend provides REST API endpoints for the main application functionality.
+The backend provides REST API endpoints for the application's main functionality.
 
 Example API areas include:
 
@@ -146,15 +153,16 @@ The frontend communicates with the backend using asynchronous HTTP requests and 
 
 ## 🔐 Authentication & Security
 
-The demo backend includes:
+The backend includes:
 
 - JWT-based authentication
 - Password hashing with bcryptjs
-- Protected admin endpoints
+- Protected admin API endpoints
 - Authentication middleware
-- Environment variables for sensitive configuration
+- Environment-based configuration
 - CORS configuration
-- Local database protection
+- SQLite foreign-key constraints
+- Transaction-based database operations
 
 Sensitive environment files and local database files are excluded from the public repository.
 
@@ -168,12 +176,12 @@ AI tools were used to assist with generating and modifying project code and file
 
 My contribution included:
 
-- Defining the project concept and direction
+- Defining the project concept and overall direction
 - Planning features and functionality
 - Providing prompts and implementation requirements
 - Reviewing generated code and project output
 - Requesting changes and improvements
-- Testing website functionality
+- Testing the website and functionality
 - Making project and feature decisions
 - Reviewing the overall user experience
 - Setting up the Git repository
@@ -191,18 +199,19 @@ This project demonstrates an **AI-assisted approach to full-stack web developmen
 Spice Grill Website/
 │
 ├── admin/
-│   ├── index.html
-│   ├── admin.js
-│   └── admin.css
+│   └── index.html
 │
 ├── backend/
+│   ├── config/
 │   ├── controllers/
 │   ├── middleware/
 │   ├── routes/
-│   ├── data/
-│   ├── server.js
-│   └── ...
+│   └── server.js
 │
+├── home-page.png
+├── Dining-Concepts.png
+├── Demo-Reviews.png
+├── Demo-Reservation.png
 ├── index.html
 ├── package.json
 ├── package-lock.json
@@ -214,22 +223,24 @@ Spice Grill Website/
 
 ## 🎨 Design
 
-The interface focuses on a modern restaurant experience with:
+The website focuses on creating a premium restaurant experience through:
 
-- Premium visual presentation
+- Dark-luxury visual styling
+- Modern typography
 - Responsive layouts
-- Restaurant-focused typography
+- Glassmorphism effects
+- Gradient and glow effects
 - Interactive menu experience
 - Clear call-to-action sections
-- Mobile-first usability
-- Customer ordering flow
-- Admin management interface
+- Mobile-friendly navigation
+- Customer ordering interface
+- Administrative management interface
 
 ---
 
 ## 🧪 Demo Safety
 
-This project is presented as a **concept/demo website**.
+This project is presented as an **unofficial concept/demo website**.
 
 It uses:
 
@@ -240,7 +251,7 @@ It uses:
 - Simulated ordering functionality
 - Demo reservation functionality
 
-It is not intended to process real customer orders, payments, or reservations.
+The website is not intended to process real customer orders, payments, or reservations.
 
 > **Unofficial Demo — Not affiliated with or endorsed by the restaurant.**
 
@@ -248,18 +259,18 @@ It is not intended to process real customer orders, payments, or reservations.
 
 ## 🎯 Project Purpose
 
-The purpose of this project is to demonstrate practical experience with:
+This project was created to explore and demonstrate practical concepts in:
 
 - Frontend web development
 - Full-stack application structure
-- REST API integration
+- REST API architecture
 - Backend development
 - Database integration
 - Authentication
-- Admin dashboards
+- Admin dashboard development
 - Responsive UI design
 - Git and GitHub workflow
-- AI-assisted software development
+- AI-assisted development
 - Deployment preparation
 
 ---
@@ -281,6 +292,6 @@ Possible future improvements include:
 
 ---
 
-## 👩‍💻 managed by
+## 👤 Project By
 
 **Pakeeza**
